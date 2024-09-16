@@ -1,16 +1,15 @@
-
 #ifndef __ADDRESS_BOOK_H__
 #define __ADDRESS_BOOK_H__
 /* TODO: Add your structures here */ 
 typedef struct {
-    char name[50];
     int age;
-    char phone[10];
+    char phone[11];
+    char name[]; //Flexibe array members must be last in struct
 } Person;
 
 typedef struct {
-    Person *people;
     int count;
+    Person *people[];
 } Address_book;
 
 /* Function declarations. Do not modify! Implement those functions in address_book.c */
