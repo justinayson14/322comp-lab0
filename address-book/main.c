@@ -6,23 +6,32 @@
 int main(void) {
 
     Person *user;
+    //Address_book *infoBook = create_address_book();
     char userName[30];
+    int n; 
+    
+    printf("Enter how many people: \n");
+    scanf("%d", &n);
+    //infoBook->count = n;
 
-    printf("Enter your full name: ");
-    scanf("%[^\n]%*c", &userName);
+    for(int i = 0; i < n; i++) {
+        printf("Enter your full name: \n");
+        scanf("%[^\n]%*c", &userName);
 
-    user = malloc(sizeof(Person) + sizeof(char) * strlen(userName));
+        user = malloc(sizeof(Person) + sizeof(char) * strlen(userName));
 
-    strcpy(user->name, userName);
+        strcpy(user->name, userName);
 
-    printf("Enter age: ");
-    scanf("%d", &user->age);
+        printf("Enter age: \n");
+        scanf("%d", &user->age);
 
-    printf("Enter 10-digit phone number: ");
-    scanf("%s", &user->phone);
+        printf("Enter 10-digit phone number: \n");
+        scanf("%s", &user->phone);
 
-    print_person(user);
+        print_person(user);
 
-
+        //infoBook->people[i] = user;
+    }
+    //print_address_book(infoBook);
     return 0;
 }
