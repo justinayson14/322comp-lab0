@@ -1,4 +1,3 @@
-//Justin Ayson Comp 322 - Lab 0
 #ifndef __ADDRESS_BOOK_H__
 #define __ADDRESS_BOOK_H__
 /* TODO: Add your structures here */ 

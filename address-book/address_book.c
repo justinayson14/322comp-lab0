@@ -1,4 +1,3 @@
-//Justin Ayson Comp 322 - Lab 0
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -44,7 +43,7 @@ Address_book* create_address_book(void) {
         printf("=== Enter person %d information ===\n", i+1);
         printf("Enter name: ");
         fgets(book->people[i].name, sizeof(book->people->name), stdin);
-        book->people[i].name[strlen(book->people[i].name) - 1] = 0;
+        book->people[i].name[strlen(book->people[i].name) - 1] = 0; //remove '\n' at end of string
 
         printf("Enter age: ");
         scanf("%d", &book->people[i].age);
@@ -61,5 +60,5 @@ Address_book* create_address_book(void) {
 }
 
 void destroy_address_book(Address_book* address_book) {
-    free(address_book);
+    free(address_book); //frees up allocated memory from malloc
 }
