@@ -4,12 +4,12 @@
 typedef struct {
     int age;
     char phone[11];
-    char name[]; //Flexibe array members must be last in struct
+    char name[100]; //Flexibe array members must be last in struct
 } Person;
 
 typedef struct {
     int count;
-    Person *people[];
+    Person *people;
 } Address_book;
 
 /* Function declarations. Do not modify! Implement those functions in address_book.c */
