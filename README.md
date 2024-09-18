@@ -1,9 +1,10 @@
-# C programming exercise
-
-Before starting working on the tutorials and programming assignments you should
-make sure you are familiar with a few important C programming concepts.
-
-To test your C programming skills you are encouraged to solve the programming
-exercise described below.
-
-More instructions [here](http://localhost:1313/education/course/homepage/os/vt18/module-0/c/excercise/). 
+# Address Book in C
+Comp 322 - Intro to Operating Systems Lab 0
+---
+### Description
+Address book that takes in a person's name, age, and phone, then inputs
+that person to an array to which the address book points to.
+---
+### Quick Start
+1. `gcc main.c address_book.c -o main.exe`
+2. Run `main.exe`
